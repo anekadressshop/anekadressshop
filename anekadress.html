@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANEKA DRESS</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 1.5rem 1rem 3rem;
+      background-color: rgb(31, 31, 31);
+      color: rgb(196, 161, 123);
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .container {
+      width: min(100%, 1000px);
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.75rem;
+    }
+
+    /* Header: stacked on mobile, side-by-side on tablets/PC */
+    .hero-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      width: 100%;
+    }
+
+    .hero-logo {
+      width: min(75%, 340px);
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 6vw, 4.5rem);
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+    }
+
+    .tagline {
+      margin: 0;
+      font-size: clamp(1.35rem, 3.5vw, 2.5rem);
+    }
+
+    .social-banner,
+    .notice,
+    .closing {
+      margin: 0;
+      font-size: clamp(1.15rem, 2.8vw, 2rem);
+    }
+
+    .center-img {
+      width: min(90%, 480px);
+      height: auto;
+      display: block;
+      margin-inline: auto;
+      border-radius: 12px;
+    }
+
+    .contact-card {
+      width: min(100%, 650px);
+      padding: 1.5rem;
+      border: 1px solid rgba(196, 161, 123, 0.35);
+      border-radius: 14px;
+      background-color: rgba(255, 255, 255, 0.03);
+      font-size: clamp(1.05rem, 2.5vw, 1.65rem);
+    }
+
+    .contact-card h2 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.4rem, 3.2vw, 2.2rem);
+    }
+
+    .contact-card p {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: rgb(224, 192, 155);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      word-break: break-word;
+    }
+
+    a:hover {
+      opacity: 0.85;
+    }
+
+    /* Tablet & Desktop adjustments */
+    @media (min-width: 768px) {
+      body {
+        padding: 3rem 2rem 4rem;
+      }
+
+      .hero-header {
+        flex-direction: row;
+        gap: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero-header">
+      <img src="anekano.jpg" alt="ANEKA DRESS Logo" class="hero-logo">
+      <h1>ANEKA DRESS</h1>
+    </header>
+
+    <p class="tagline">ANEKA DRESS Is a Georgian Women's Clothing Shop</p>
+
+    <p class="social-banner">Our TikTok And Instagram Are: <strong>aneka.dress</strong></p>
+
+    <img src="anekatext.jpg" alt="ANEKA DRESS Collection" class="center-img">
+
+    <p class="notice">Online Ordering Will Be Available Soon!</p>
+
+    <address class="contact-card">
+      <h2>About Us!</h2>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:anekadressshop@gmail.com">anekadressshop@gmail.com</a>
+      </p>
+      <p>
+        <strong>Phone:</strong>
+        <a href="tel:+995557404346">+995 557 40 43 46</a>
+        <span> or </span>
+        <a href="tel:+995555209362">+995 555 20 93 62</a>
+      </p>
+      <p><strong>Location:</strong> Tbilisi, Georgia</p>
+    </address>
+
+    <p class="closing">Thanks for visiting!</p>
+  </main>
+</body>
+</html>
